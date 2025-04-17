@@ -1,3 +1,6 @@
+/* Estilos específicos para a página Início */
+
+
 body {
     margin: 0;
     font-family: "Newsreader",serif;
@@ -68,19 +71,192 @@ body {
   h2{
     padding: 10px 10px;
     text-align: center;
+    color: #7a1e1e;
   }
 
   h1{
-    padding: 10px 10px;
+    color: #7a1e1e;
+    padding: 20px 30px;
     text-align: center;
   }
 
+  .texto-inicio{
+    margin: 10px auto;
+    max-width: 1300px;
+    font-size: 1.3em;
+    text-align: center;
+  }
 
-
-  .esquerda{
+  .esquerda, .direita {
     font-size: large;
   }
 
-  .direita{
-    font-size: large;
+  /* Estilos específicos para a página Início, parte das novidades */
+
+  .novidades {
+    padding: 0px 0px;
+    text-align: center;
+    background-color: antiquewhite;
   }
+  
+  
+  .novidades h2 {
+    margin: 20px auto;
+    padding: 10px 20px;
+    max-width: 500px;
+    font-size: 1.8em;
+    background-color: #811010;
+    color: rgb(255, 250, 240);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .vinhos-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+  }
+  
+  .vinho {
+    width: 250px;
+  }
+  
+  .vinho-img, .vinho-img1 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .vinho-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .vinho-img1 img {
+    width: 97%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  
+  .vinho-img:hover img {
+    transform: scale(1.05);
+  }
+  
+  .vinho-img:hover .overlay {
+    opacity: 1;
+  }
+
+  .vinho-img1:hover img {
+    transform: scale(1.05);
+  }
+  
+  .vinho-img1:hover .overlay {
+    opacity: 1;
+  }
+  
+  .vinho-legenda {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1em;
+    color: #7a1e1e;
+  }
+  
+    /* Estilos específicos para a página Início, parte do vídeo */
+
+  .video-container{
+    text-align: center;
+  }
+
+  .legenda-video{
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+  }
+
+/* Estilos específicos para a página Sobre Nós */
+.sobre-nos {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Newsreader', serif;
+  line-height: 1.6;
+}
+
+.sobre-nos h1, .sobre-nos h2 {
+  color: #7a1e1e;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+.sobre-nos ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.sobre-nos table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.sobre-nos table, .sobre-nos th, .sobre-nos td {
+  border: 1px solid #aaa;
+  padding: 8px;
+  text-align: left;
+}
+
+/*Estilos específicos para a página Tipos*/
+.vinhoTinto, .vinhoBranco, .vinhoRose, .espumante, .vinhoLicoroso {
+  color: #7a1e1e;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+.textoTinto, .textoBranco, .textoRose, .textoEspumante, .textoLicoroso{
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Newsreader', serif;
+  line-height: 1.6;
+}
+.imgVinhoTinto, .imgVinhoBranco, .imgVinhoRose, .imgEspumante, .imgVinhoLicoroso {
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+/*Estilos específicos para a página Harmonizacoes*/
+.imgCarneVermelha, .imgCarneBranca, .imgMassasLeves, .imgMassasVermelhas {
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+.harmonizacoes-container{
+  background-color:antiquewhite;
+}
